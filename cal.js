@@ -1,5 +1,7 @@
-#!/usr/bin/env node
+#!/usr/bin/env node --harmony_destructuring
 
 'use strict';
 
-console.log('calendar');
+const [,, ...args] = process.argv;
+
+console.log('args');
