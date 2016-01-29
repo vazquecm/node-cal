@@ -12,7 +12,7 @@ describe('cal', () => {
     });
   });
 
-// code below is testing for years in zellers, for each "it" you will need a goal and output then what your "expect" outcome will be //
+// code below is testing for years in zellers, for each "it" you will need a "goal" and "output" then what your "expect" outcome will be //
   describe("Zeller's congruence", () => {
      const zellers = require('../lib/zellers.js');
 
