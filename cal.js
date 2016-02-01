@@ -1,7 +1,7 @@
-#!/usr/bin/env node --harmony_destructuring
+#!/usr/bin/env node
 
 'use strict';
 
-const [,, ...args] = process.argv;
-
-console.log('args');
+require('babel-register');
+console.log('babeled');
+require('./lib.cli');

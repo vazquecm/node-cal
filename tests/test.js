@@ -18,16 +18,16 @@ describe('cal', () => {
 
     describe('.modifiedYear', () => {
 
-      it('returns 2014 for Jan 2015', () => {
+      it('returns 2015 for Jan 2015', () => {
         const goal = execSync('cal').toString();
-        const output = execSync('./cal.js 2016 1').toString();
+        const output = execSync('./cal.js 2015 1').toString();
         expect(zellers.modifiedYear(2015, 1)).to.equal(2014);
       });
 
        it('returns 2015 for Feb 2015', () => {
         const goal = execSync('cal').toString();
         const output = execSync('./cal.js 2016 2').toString();
-        expect(zellers.modifiedYear(2016, 2)).to.equal(2016);
+        expect(zellers.modifiedYear(2016, 2)).to.equal(2015);
       });
 
        it('returns 2017 for March 2017', () => {
